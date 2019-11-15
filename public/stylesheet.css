@@ -1,3 +1,12 @@
+*{font-family: century-gothic, AppleGothic, sans-serif;
+}
+body {
+  font-style: italic;
+  background-color: #EBECF0;
+  font-family: century-gothic, AppleGothic, sans-serif;
+
+
+}
 .container {
   width: 100%;
   height: 100%;
@@ -16,35 +25,32 @@
   width: 70%;
 }
 
-.logo {
+#logo {
   /* margin: auto; */
   height: 15%;
-  margin: auto;
-  background: orange;
+  margin: 0 auto;
   overflow: hidden;
-  /* padding: 1%; */
+  border-top: 5px solid orange;
+  padding: 0;
+  width: 100%;
 }
 
-.logo img {
-  margin-top: 2.7%;
-  height:90%;
-  width:100%;
-}
 
 .profile {
-  height: 25%;
-  width: 80%;
+  height: 15%;
+  width: 100%;
   margin: 5% auto;
-  padding: 2%;
+  /* padding: 10%; */
   background-color: white;
-  border-radius: 5%;
+  border-radius: 6%;
 }
 
 .profile_photo {
   float: left;
   width:30%;
-  margin: 5%;
   border-radius: 50%;
+  max-height: 90%;
+
 }
 
 .profile_details {
@@ -52,17 +58,24 @@
   margin: 5%;
   width:50%;
   height:25%;
+  font-size: 11%;
+  font-style: normal;
+
 }
 
 .button_container {
   float: left;
   height: 45%;
   width: 100%;
-  background-color: pink;
+  background-color: #EBECF0;
+  border-radius: 50%;
+
 }
 
 .button {
-  background-color: orange;
+  background-color: white;
+  font-size: 10%;
+
   border: none;
   color: white;
   padding: 5% 10%;
@@ -77,9 +90,13 @@
   transition-duration: 0.4s;
   cursor: pointer;
 }
+.button span{
+  color: #939597;
+  font-weight: bold;
+}
 
 .button:hover {
-  background-color: #4CAF50;
+  background-color: #D3D4D8;
   color: white;
 }
 
