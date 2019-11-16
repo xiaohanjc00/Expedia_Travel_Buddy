@@ -323,3 +323,58 @@ body {
   width: 150px;
   height: 40px;
 }
+
+.hobbies_list {
+  display: flex;
+  justify-content: space-around;
+}
+
+.bio {
+  font-style: italic;
+  font-family: century-gothic, AppleGothic, sans-serif;
+  font-size: 15px;
+  text-align: center;
+  color: #939597;
+
+}
+.match {
+  display: flex;
+  /*justify-content: center;
+  align-items: center;*/
+
+}
+
+.brie {
+  margin-right: -50px;
+}
+
+.Mikey{
+  margin-left: -50px;
+}
+
+
+.plane{
+  z-index: 100;
+  margin-top: auto;
+  height: 64px;
+  margin-bottom: 60px;
+}
+.bubble {
+  background-color: white;
+  border-radius: 20px;
+  margin: 16px;
+  padding: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+}
+
+#match_msg {
+    font-style: italic;
+    font-family: century-gothic, AppleGothic, sans-serif;
+    font-size: 15px;
+    text-align: center;
+    color: #939597;
+}
