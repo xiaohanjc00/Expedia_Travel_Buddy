@@ -273,7 +273,7 @@ body {
   width: 700px;
 }
 
-.gender_buttons{
+.formbutton{
   padding-bottom: 10px;
 }
 
@@ -285,7 +285,7 @@ body {
   padding-bottom: 10px;
 }
 
-#genderbutton{
+.formbutton{
   background-color: #FFFFFF;
   color: grey;
   border: 2px solid grey;
@@ -294,22 +294,7 @@ body {
   font-weight: bold;
 }
 
-#genderbutton:active{
-  background: grey;
-  color: white;
-}
-
-
-#agebutton{
-  background-color: #FFFFFF;
-  color: grey;
-  border: 2px solid grey;
-  padding: 12px 24px;
-  border-radius: 4px;
-  font-weight: bold;
-}
-
-#agebutton:active{
+.formbutton-active{
   background: grey;
   color: white;
 }
