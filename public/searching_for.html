@@ -66,64 +66,73 @@
       <div class= "main_container">
         <div id="buddies">
           <div>
-            <h1> Who are you searching for ? </h1>
+            <h1 style="color:grey; font-size:20px;text-align:center; font-weight:bold;"> Who are you searching for ? </h1>
           </div>
           <div style="width:100%;display:flex;">
             <div id="buddy_1">
-              <button type="button" id="button" name="journey">Journey Buddy</button>
+              <button type="button" id="buddybutton" name="journey">Journey Buddy</button>
             </div>
             <div id="buddy_2">
-              <button type="button" id="button" name="destination">Destination Buddy</button>
+              <button type="button" id="buddybutton" name="destination">Destination Buddy</button>
             </div>
           </div>
         </div>
-        <div id="criteria_container" style="margin:5%;flex:1;background-color:white;">
+        <div id="criteria_container">
           <div id="criteria">
-            <span> Search Criteria </span>
+            <span style="color:grey; font-size:20px;text-align:center; font-weight:bold;"> Search Criteria </span>
           </div>
-          <div class="list_container">
-            <span>Gender:</span>
+          <div class="list_container" style="padding-top: 20px;">
+            <span style="color:grey; font-size:16px;text-align:center; font-weight:bold;">Gender:</span>
             <div class="gender_buttons">
-              <button type="button" id="button" name="nothing">No Preference</button>
-              <button type="button" id="button" name="male">Male</button>
-              <button type="button" id="button" name="female">Female</button>
+              <button type="button" id="genderbutton" name="nothing">No Preference</button>
+              <button type="button" id="genderbutton" name="male">Male</button>
+              <button type="button" id="genderbutton" name="female">Female</button>
             </div>
-            <span>Age:</span>
+            <span style="color:grey; font-size:16px;text-align:center; font-weight:bold;">Age:</span>
             <div class="age_buttons">
-              <button type="button" id="button" name="age0">No Preference</button>
-              <button type="button" id="button" name="age1">18-25</button>
-              <button type="button" id="button" name="age2">26-33</button>
-              <button type="button" id="button" name="age3">34-40</button>
-              <button type="button" id="button" name="age3">40+</button>
+              <button type="button" id="agebutton" name="age0">No Preference</button>
+              <button type="button" id="agebutton" name="age1">18-25</button>
+              <button type="button" id="agebutton" name="age2">26-33</button>
+              <button type="button" id="agebutton" name="age3">34-40</button>
+              <button type="button" id="agebutton" name="age3">40+</button>
             </div>
-            <span>Nationality:</span>
+            <span style="color:grey; font-size:16px;text-align:center; font-weight:bold;">Nationality:</span>
             <div class="nationality_buttons">
-              <button type="button" id="button" name="nochoice">No Preference</button>
-              <button type="button" id="button" name="choice">Same Nationality</button>
+              <button type="button" id="agebutton" name="nochoice">No Preference</button>
+              <button type="button" id="agebutton" name="choice">Same Nationality</button>
             </div>
-            <span>Hobbies:</span>
+            <span style="color:grey; font-size:16px;text-align:center; font-weight:bold;">Hobbies:</span>
             <div class="hobbies_list">
-              <select name="high_priority" onclick="">
-                <option value="">High Priority</option>
-                <option value="sport">Sports</option>
-                <option value="music">Music</option>
-                <option value="video_game">Vide Games</option>
-                <option value="cooking">Cooking</option>
-              </select>
-              <select name="medium_priority" onclick="">
-                <option value="">Medium Priority</option>
-                <option value="sport">Sports</option>
-                <option value="music">Music</option>
-                <option value="video_game">Vide Games</option>
-                <option value="cooking">Cooking</option>
-              </select>
-              <select name="low_priority" onclick="">
-                <option value="">Low Priority</option>
-                <option value="sport">Sports</option>
-                <option value="music">Music</option>
-                <option value="video_game">Vide Games</option>
-                <option value="cooking">Cooking</option>
-              </select>
+              <select class="selection-2" id="input_hobby3" name="service">
+							<option>High Priority</option>
+							<option>Sport</option>
+							<option>Music</option>
+							<option>Esports</option>
+							<option>Anime</option>
+							<option>Technology</option>
+							<option>DIY</option>
+							<option>Fashion</option>
+						</select>
+            <select class="selection-2" id="input_hobby3" name="service">
+            <option>Medium Priority</option>
+              <option>Sport</option>
+              <option>Music</option>
+              <option>Esports</option>
+              <option>Anime</option>
+              <option>Technology</option>
+              <option>DIY</option>
+              <option>Fashion</option>
+            </select>
+            <select class="selection-2" id="input_hobby3" name="service">
+            <option>Low Priority</option>
+              <option>Sport</option>
+              <option>Music</option>
+              <option>Esports</option>
+              <option>Anime</option>
+              <option>Technology</option>
+              <option>DIY</option>
+              <option>Fashion</option>
+            </select>
             </div>
           </div>
         </div>
