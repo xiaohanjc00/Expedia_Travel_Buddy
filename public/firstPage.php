@@ -5,7 +5,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport">
 <!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="main.css">
+	<link rel="stylesheet" type="text/css" href="firstPage.css">
 
 </head>
 
