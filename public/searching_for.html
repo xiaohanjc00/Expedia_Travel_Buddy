@@ -1,0 +1,133 @@
+<!<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="stylesheet2.css">
+    <link rel="stylesheet" href="https://use.typekit.net/oov2wcw.css">
+    <title> Travel Buddy </title>
+  </head>
+  <body>
+    <div class = "container">
+      <div class = "sidebar">
+        <div class= "logo">
+          <div style="background-color:orange;height:5%;"></div>
+          <div id= "logo_inside">
+              <img src="Travel Buddy.PNG">
+          </div>
+        </div>
+        <div class="sidebar_container">
+          <div class="profile">
+            <div class="profile_photo">
+              <img src="Profile Photo.png">
+            </div>
+            <div class="profile_details">
+              <h1 id="heading1">Brian</h1>
+              <h1 id="heading2">Buddy Level</h1>
+            </div>
+          </div>
+          <div class = "buddy_container">
+            <div class="buddy_type">
+              <img src="picture1.svg" class="icon">
+              <p>Journey Buddy</p>
+            </div>
+            <div class="buddy_type">
+              <img src="picture1.svg" class="icon">
+              <p>Destination Buddy</p>
+            </div>
+          </div>
+          <div class="button_container">
+            <div>
+              <button class="button" id="button_1" type="button" name="My Profile"><span>My Profile </span></button>
+            </div>
+            <div>
+              <button class="button" id="button_2" type="button" name="Live Matches"><span> Live Matches</span></button>
+            </div>
+            <div>
+              <button class="button" id="button_3" type="button" name="History"><span>History</span></button>
+            </div>
+            <div>
+              <button class="button" id="button_4" type="button" name="Blog"><span>Blog</span></button>
+            </div>
+            <div>
+              <button class="button" id="button_5" type="button" name="Settings">
+                <span> Settings </span></button>
+            </div>
+        </div>
+        <div class="sign_out_container"style = "margin-top: 5%;" >
+           <div class="back-to-exp-link">
+             <span>Back to</span>
+             <img src="Picture 1.png" />
+
+             <a href="https://expedia.co.uk" target="_blank"></a>
+           </div>
+          </div>
+        </div>
+      </div>
+      <div class= "main_container">
+        <div id="buddies">
+          <div>
+            <h1> Who are you searching for ? </h1>
+          </div>
+          <div style="width:100%;display:flex;">
+            <div id="buddy_1">
+              <button type="button" id="button" name="journey">Journey Buddy</button>
+            </div>
+            <div id="buddy_2">
+              <button type="button" id="button" name="destination">Destination Buddy</button>
+            </div>
+          </div>
+        </div>
+        <div id="criteria_container" style="margin:5%;flex:1;background-color:white;">
+          <div id="criteria">
+            <span> Search Criteria </span>
+          </div>
+          <div class="list_container">
+            <span>Gender:</span>
+            <div class="gender_buttons">
+              <button type="button" id="button" name="nothing">No Preference</button>
+              <button type="button" id="button" name="male">Male</button>
+              <button type="button" id="button" name="female">Female</button>
+            </div>
+            <span>Age:</span>
+            <div class="age_buttons">
+              <button type="button" id="button" name="age0">No Preference</button>
+              <button type="button" id="button" name="age1">18-25</button>
+              <button type="button" id="button" name="age2">26-33</button>
+              <button type="button" id="button" name="age3">34-40</button>
+              <button type="button" id="button" name="age3">40+</button>
+            </div>
+            <span>Nationality:</span>
+            <div class="nationality_buttons">
+              <button type="button" id="button" name="nochoice">No Preference</button>
+              <button type="button" id="button" name="choice">Same Nationality</button>
+            </div>
+            <span>Hobbies:</span>
+            <div class="hobbies_list">
+              <select name="high_priority" onclick="">
+                <option value="">High Priority</option>
+                <option value="sport">Sports</option>
+                <option value="music">Music</option>
+                <option value="video_game">Vide Games</option>
+                <option value="cooking">Cooking</option>
+              </select>
+              <select name="medium_priority" onclick="">
+                <option value="">Medium Priority</option>
+                <option value="sport">Sports</option>
+                <option value="music">Music</option>
+                <option value="video_game">Vide Games</option>
+                <option value="cooking">Cooking</option>
+              </select>
+              <select name="low_priority" onclick="">
+                <option value="">Low Priority</option>
+                <option value="sport">Sports</option>
+                <option value="music">Music</option>
+                <option value="video_game">Vide Games</option>
+                <option value="cooking">Cooking</option>
+              </select>
+            </div>
+          </div>
+        </div>
+      </div>
+
+  </body>
+</html>
