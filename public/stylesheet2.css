@@ -245,11 +245,7 @@ body {
   margin-bottom: 0;
 }
 
-#profile img {
-
-}
-
-#buddybutton {
+.buddybutton {
   background-color: #6200EA;
   color: white;
   border: 2px solid grey;
@@ -258,7 +254,7 @@ body {
   font-weight: bold;
 }
 
-#buddybutton:active {
+.buddybutton:active {
   background-color: white;
   color: #6200EA;
 }
