@@ -7,6 +7,7 @@ body {
   background-color: #EBECF0;
   font-style: italic;
   font-family: century-gothic, AppleGothic, sans-serif;
+  min-height: 150vh;
 }
 
 .container {
@@ -17,15 +18,17 @@ body {
 }
 
 .sidebar {
-  flex: 1;
+  flex: 2;
   display: flex;
   flex-direction: column;
   background-color: white;
+  min-width: 250px;
+  border-right: 2px solid #D3D4D8;
 }
 
 .main_container {
-  flex: 3;
-  background-color: green;
+  flex: 5;
+  background-color: #EBECF0;
 }
 
 .logo {
@@ -54,7 +57,6 @@ body {
 }
 
 .profile {
-  flex:1;
   display: flex;
   background: white;
   border-radius: 10%;
@@ -99,6 +101,7 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  min-width: 250px;
 }
 
 .buddy_type {
@@ -106,7 +109,6 @@ body {
   flex: 1;
   background-color: #6600FF;
   margin: 2%;
-  height: 2vh;
   width: 90%;
   border-radius: 10%;
 }
@@ -118,12 +120,13 @@ body {
   justify-content: center;
   align-items: center;
   width: 5vw;
+  min-width: 5vw;
 }
 
 .button_container {
-  float: left;
+  margin: 5%;
+  flex: 1;
   height: 45%;
-  width: 100%;
   background-color: #EBECF0;
   border-radius: 15%;
   overflow: hidden;
@@ -162,4 +165,41 @@ body {
 .button:hover {
   background-color: #D3D4D8;
   color: white;
+}
+
+.sign_out_container {
+  /* border-radius: 15%; */
+  overflow: hidden;
+  font-family: century-gothic, AppleGothic, sans-serif;
+}
+
+#sign_out {
+  height: 100%;
+}
+
+
+.back-to-exp-link {
+    align-items: center;
+    background: white;
+    border-radius: 30spx;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 15px;
+    position: relative;
+}
+
+.back-to-exp-link span {
+  color: #939597;
+  font-weight: bold;
+}
+.back-to-exp-link img{
+  width: 100%;
+}
+.back-to-exp-link a {
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
 }
