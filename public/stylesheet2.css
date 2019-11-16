@@ -232,10 +232,15 @@ body {
   flex: 1;
 }
 
-.profile_container {
+#profile_container {
   background-color: white;
+  flex: 1;
+  display: flex;
+  margin: 5%;
+  margin-bottom: 0;
 }
 
-#profile img {
-  
+.hobbies_list {
+  display: flex;
+  justify-content: space-around;
 }
