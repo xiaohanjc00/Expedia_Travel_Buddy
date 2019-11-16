@@ -238,8 +238,12 @@ body {
   text-align: center;
 }
 
-.profile_container {
+#profile_container {
   background-color: white;
+  flex: 1;
+  display: flex;
+  margin: 5%;
+  margin-bottom: 0;
 }
 
 #profile img {
