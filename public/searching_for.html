@@ -37,22 +37,22 @@
           </div>
           <div class="button_container">
             <div>
-              <a class="button" id="button_1" type="button" name="My Profile"><span>My Profile </span></a>
-            </div>
-            <div>
-              <a href="matches_page.html" class="button" id="button_2" type="button" name="Live Matches"><span> Live Matches</span></a>
-            </div>
-            <div>
-              <a class="button" id="button_3" type="button" name="History"><span>History</span></a>
-            </div>
-            <div>
-              <a class="button" id="button_4" type="button" name="Blog"><span>Blog</span></a>
-            </div>
-            <div>
-              <a class="button" id="button_5" type="button" name="Settings">
-                <span> Settings </span></a>
-            </div>
-        </div>
+             <a class="button" id="button_1" type="button" name="My Profile"><span>My Profile </span></a>
+           </div>
+           <div>
+             <a href= "mikey.html" class="button" id="button_2" type="button" name="Live Matches"><span> Live Matches</span></a>
+           </div>
+           <div>
+             <a class="button" id="button_3" type="button" name="History"><span>History</span></a>
+           </div>
+           <div>
+             <a class="button" id="button_4" type="button" name="Blog"><span>Blog</span></a>
+           </div>
+           <div>
+             <a class="button" id="button_5" type="button" name="Settings">
+               <span> Settings </span></a>
+           </div>
+         </div>
         <div class="sign_out_container"style = "margin-top: 5%;" >
            <div class="back-to-exp-link">
              <span>Back to</span>
@@ -82,61 +82,83 @@
             <span style="color:grey; font-size:20px;text-align:center; font-weight:bold;"> Search Criteria </span>
           </div>
           <div class="list_container" style="padding-top: 20px;">
-            <span style="color:grey; font-size:16px;text-align:center; font-weight:bold;">Gender:</span>
-            <div class="gender_buttons">
-              <button type="button" id="genderbutton" name="nothing">No Preference</button>
-              <button type="button" id="genderbutton" name="male">Male</button>
-              <button type="button" id="genderbutton" name="female">Female</button>
-            </div>
-            <span style="color:grey; font-size:16px;text-align:center; font-weight:bold;">Age:</span>
-            <div class="age_buttons">
-              <button type="button" id="agebutton" name="age0">No Preference</button>
-              <button type="button" id="agebutton" name="age1">18-25</button>
-              <button type="button" id="agebutton" name="age2">26-33</button>
-              <button type="button" id="agebutton" name="age3">34-40</button>
-              <button type="button" id="agebutton" name="age3">40+</button>
-            </div>
-            <span style="color:grey; font-size:16px;text-align:center; font-weight:bold;">Nationality:</span>
-            <div class="nationality_buttons">
-              <button type="button" id="agebutton" name="nochoice">No Preference</button>
-              <button type="button" id="agebutton" name="choice">Same Nationality</button>
-            </div>
-            <span style="color:grey; font-size:16px;text-align:center; font-weight:bold;">Hobbies:</span>
-            <div class="hobbies_list">
+            <form id="myForm" action="formNext.php" method="post">
+              <span style="color:grey; font-size:16px;text-align:center; font-weight:bold;">Gender:</span>
+              <div class="gender_buttons">
+                <button type="button" class="formbutton" id="genderbutton" value="0" name="nothing" onclick="toggleGenderButtons(0);">No Preference</button>
+                <button type="button" class="formbutton" id="genderbutton1" value="male" name="male" onclick="toggleGenderButtons(1);">Male</button>
+                <button type="button" class="formbutton"  id="genderbutton2" value"female "=name="female" onclick="toggleGenderButtons(2);">Female</button>
+              </div>
+              <span style="color:grey; font-size:16px;text-align:center; font-weight:bold;">Age:</span>
+              <div class="age_buttons">
+                <button type="button" class="formbutton" id="agebutton" value="0" name="age0" onclick="toggleAgeButtons(0);">No Preference</button>
+                <button type="button" class="formbutton" id="agebutton1" value="18" name="age1" onclick="toggleAgeButtons(1);">18-25</button>
+                <button type="button" class="formbutton" id="agebutton2" value="26" name="age2" onclick="toggleAgeButtons(2);">26-33</button>
+                <button type="button" class="formbutton" id="agebutton3" value="34" name="age3" onclick="toggleAgeButtons(3);">34-40</button>
+                <button type="button" class="formbutton" id="agebutton4" value="40" name="age4" onclick="toggleAgeButtons(4);">40+</button>
+              </div>
+              <span style="color:grey; font-size:16px;text-align:center; font-weight:bold;">Nationality:</span>
+              <div class="nationality_buttons">
+                <button type="button" class="formbutton" id="nationbutton" value="0" name="nochoice" onclick="toggleNationButtons(0);">No Preference</button>
+                <button type="button" class="formbutton" id="nationbutton1" name="choice" onclick="toggleNationButtons(1);">Same Nationality</button>
+              </div>
+              <span style="color:grey; font-size:16px;text-align:center; font-weight:bold;">Hobbies:</span>
+              <div class="hobbies_list">
+                <select class="selection-2" id="input_hobby1" name="service">
+  							<option>High Priority</option>
+  							<option>Sport</option>
+  							<option>Music</option>
+  							<option>Esports</option>
+  							<option>Anime</option>
+  							<option>Technology</option>
+  							<option>DIY</option>
+  							<option>Fashion</option>
+  						</select>
+              <select class="selection-2" id="input_hobby2" name="service">
+              <option>Medium Priority</option>
+                <option>Sport</option>
+                <option>Music</option>
+                <option>Esports</option>
+                <option>Anime</option>
+                <option>Technology</option>
+                <option>DIY</option>
+                <option>Fashion</option>
+              </select>
               <select class="selection-2" id="input_hobby3" name="service">
-							<option>High Priority</option>
-							<option>Sport</option>
-							<option>Music</option>
-							<option>Esports</option>
-							<option>Anime</option>
-							<option>Technology</option>
-							<option>DIY</option>
-							<option>Fashion</option>
-						</select>
-            <select class="selection-2" id="input_hobby3" name="service">
-            <option>Medium Priority</option>
-              <option>Sport</option>
-              <option>Music</option>
-              <option>Esports</option>
-              <option>Anime</option>
-              <option>Technology</option>
-              <option>DIY</option>
-              <option>Fashion</option>
-            </select>
-            <select class="selection-2" id="input_hobby3" name="service">
-            <option>Low Priority</option>
-              <option>Sport</option>
-              <option>Music</option>
-              <option>Esports</option>
-              <option>Anime</option>
-              <option>Technology</option>
-              <option>DIY</option>
-              <option>Fashion</option>
-            </select>
-            </div>
+              <option>Low Priority</option>
+                <option>Sport</option>
+                <option>Music</option>
+                <option>Esports</option>
+                <option>Anime</option>
+                <option>Technology</option>
+                <option>DIY</option>
+                <option>Fashion</option>
+              </select>
+              </div>
+                <button type="submit" class="formbutton" id="submitForm" style="margin-left:43%;margin-top:5%;" name="submit">submit</button>
+            </form>
           </div>
         </div>
       </div>
 
   </body>
+  <script type="text/javascript">
+    var genderbuttons = [document.getElementById("genderbutton"), document.getElementById("genderbutton1"), document.getElementById("genderbutton2")];
+    function toggleGenderButtons(index) {
+      genderbuttons.forEach(btn => btn.classList.remove("formbutton-active"));
+      genderbuttons[index].classList.add("formbutton-active");
+    }
+
+    var agebuttons = [document.getElementById("agebutton"), document.getElementById("agebutton1"), document.getElementById("agebutton2"), document.getElementById("agebutton3"), document.getElementById("agebutton4")];
+    function toggleAgeButtons(index) {
+      agebuttons.forEach(btn => btn.classList.remove("formbutton-active"));
+      agebuttons[index].classList.add("formbutton-active");
+    }
+
+    var nationbuttons = [document.getElementById("nationbutton"), document.getElementById("nationbutton1")];
+    function toggleNationButtons(index) {
+      nationbuttons.forEach(btn => btn.classList.remove("formbutton-active"));
+      nationbuttons[index].classList.add("formbutton-active");
+    }
+  </script>
 </html>
