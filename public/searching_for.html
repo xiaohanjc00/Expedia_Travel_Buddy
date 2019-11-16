@@ -40,7 +40,7 @@
              <a class="button" id="button_1" type="button" name="My Profile"><span>My Profile </span></a>
            </div>
            <div>
-             <a href= "mikey.html" class="button" id="button_2" type="button" name="Live Matches"><span> Live Matches</span></a>
+             <a href= "matches_page.html" class="button" id="button_2" type="button" name="Live Matches"><span> Live Matches</span></a>
            </div>
            <div>
              <a class="button" id="button_3" type="button" name="History"><span>History</span></a>
@@ -70,10 +70,10 @@
           </div>
           <div style="width:100%;display:flex;">
             <div id="buddy_1">
-              <button type="button" id="buddybutton" name="journey">Journey Buddy</button>
+              <button type="button" class="buddybutton" id="buddybutton" name="journey" onclick="toggleBuddyButtons(0)">Journey Buddy</button>
             </div>
             <div id="buddy_2">
-              <button type="button" id="buddybutton" name="destination">Destination Buddy</button>
+              <button type="button" class="buddybutton" id="buddybutton1" name="destination" onclick="toggleBuddyButtons(1)">Destination Buddy</button>
             </div>
           </div>
         </div>
@@ -85,22 +85,22 @@
             <form id="myForm" action="formNext.php" method="post">
               <span style="color:grey; font-size:16px;text-align:center; font-weight:bold;">Gender:</span>
               <div class="gender_buttons">
-                <button type="button" class="formbutton" id="genderbutton" value="0" name="nothing" onclick="toggleGenderButtons(0);">No Preference</button>
-                <button type="button" class="formbutton" id="genderbutton1" value="male" name="male" onclick="toggleGenderButtons(1);">Male</button>
-                <button type="button" class="formbutton"  id="genderbutton2" value"female "=name="female" onclick="toggleGenderButtons(2);">Female</button>
+                <button type="button" class="formbutton" id="genderbutton" value="0" name="gender" onclick="toggleGenderButtons(0);">No Preference</button>
+                <button type="button" class="formbutton" id="genderbutton1" value="male" name="gender" onclick="toggleGenderButtons(1);">Male</button>
+                <button type="button" class="formbutton"  id="genderbutton2" value"female" name="gender" onclick="toggleGenderButtons(2);">Female</button>
               </div>
               <span style="color:grey; font-size:16px;text-align:center; font-weight:bold;">Age:</span>
               <div class="age_buttons">
-                <button type="button" class="formbutton" id="agebutton" value="0" name="age0" onclick="toggleAgeButtons(0);">No Preference</button>
-                <button type="button" class="formbutton" id="agebutton1" value="18" name="age1" onclick="toggleAgeButtons(1);">18-25</button>
-                <button type="button" class="formbutton" id="agebutton2" value="26" name="age2" onclick="toggleAgeButtons(2);">26-33</button>
-                <button type="button" class="formbutton" id="agebutton3" value="34" name="age3" onclick="toggleAgeButtons(3);">34-40</button>
-                <button type="button" class="formbutton" id="agebutton4" value="40" name="age4" onclick="toggleAgeButtons(4);">40+</button>
+                <button type="button" class="formbutton" id="agebutton" value="0" name="age" onclick="toggleAgeButtons(0);">No Preference</button>
+                <button type="button" class="formbutton" id="agebutton1" value="18" name="age" onclick="toggleAgeButtons(1);">18-25</button>
+                <button type="button" class="formbutton" id="agebutton2" value="26" name="age" onclick="toggleAgeButtons(2);">26-33</button>
+                <button type="button" class="formbutton" id="agebutton3" value="34" name="age" onclick="toggleAgeButtons(3);">34-40</button>
+                <button type="button" class="formbutton" id="agebutton4" value="40" name="age" onclick="toggleAgeButtons(4);">40+</button>
               </div>
               <span style="color:grey; font-size:16px;text-align:center; font-weight:bold;">Nationality:</span>
               <div class="nationality_buttons">
-                <button type="button" class="formbutton" id="nationbutton" value="0" name="nochoice" onclick="toggleNationButtons(0);">No Preference</button>
-                <button type="button" class="formbutton" id="nationbutton1" name="choice" onclick="toggleNationButtons(1);">Same Nationality</button>
+                <button type="button" class="formbutton" id="nationbutton" value="0" name="nation" onclick="toggleNationButtons(0);">No Preference</button>
+                <button type="button" class="formbutton" id="nationbutton1" name="nation" onclick="toggleNationButtons(1);">Same Nationality</button>
               </div>
               <span style="color:grey; font-size:16px;text-align:center; font-weight:bold;">Hobbies:</span>
               <div class="hobbies_list">
@@ -143,6 +143,12 @@
 
   </body>
   <script type="text/javascript">
+    var buddybuttons = [document.getElementById("buddybutton"), document.getElementById("buddybutton1")];
+    function toggleBuddyButtons(index) {
+      buddybuttons.forEach(btn => btn.classList.remove("formbutton-active"));
+      buddybuttons[index].classList.add("formbutton-active");
+    }
+
     var genderbuttons = [document.getElementById("genderbutton"), document.getElementById("genderbutton1"), document.getElementById("genderbutton2")];
     function toggleGenderButtons(index) {
       genderbuttons.forEach(btn => btn.classList.remove("formbutton-active"));
