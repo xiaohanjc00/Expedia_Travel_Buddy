@@ -70,10 +70,10 @@
           </div>
           <div style="width:100%;display:flex;">
             <div id="buddy_1">
-              <button type="button" id="buddybutton" name="journey">Journey Buddy</button>
+              <button type="button" class="buddybutton" id="buddybutton" name="journey" onclick="toggleBuddyButtons(0)">Journey Buddy</button>
             </div>
             <div id="buddy_2">
-              <button type="button" id="buddybutton" name="destination">Destination Buddy</button>
+              <button type="button" class="buddybutton" id="buddybutton1" name="destination" onclick="toggleBuddyButtons(1)">Destination Buddy</button>
             </div>
           </div>
         </div>
@@ -87,7 +87,7 @@
               <div class="gender_buttons">
                 <button type="button" class="formbutton" id="genderbutton" value="0" name="gender" onclick="toggleGenderButtons(0);">No Preference</button>
                 <button type="button" class="formbutton" id="genderbutton1" value="male" name="gender" onclick="toggleGenderButtons(1);">Male</button>
-                <button type="button" class="formbutton"  id="genderbutton2" value"female "=name="gender" onclick="toggleGenderButtons(2);">Female</button>
+                <button type="button" class="formbutton"  id="genderbutton2" value"female" name="gender" onclick="toggleGenderButtons(2);">Female</button>
               </div>
               <span style="color:grey; font-size:16px;text-align:center; font-weight:bold;">Age:</span>
               <div class="age_buttons">
@@ -143,6 +143,12 @@
 
   </body>
   <script type="text/javascript">
+    var buddybuttons = [document.getElementById("buddybutton"), document.getElementById("buddybutton1")];
+    function toggleBuddyButtons(index) {
+      buddybuttons.forEach(btn => btn.classList.remove("formbutton-active"));
+      buddybuttons[index].classList.add("formbutton-active");
+    }
+
     var genderbuttons = [document.getElementById("genderbutton"), document.getElementById("genderbutton1"), document.getElementById("genderbutton2")];
     function toggleGenderButtons(index) {
       genderbuttons.forEach(btn => btn.classList.remove("formbutton-active"));
