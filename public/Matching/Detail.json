@@ -1,0 +1,7 @@
+[
+{"id": 001, "Name": "Joe Green", "Flight_Time": "2019/10/01", "Flight": 100, "Hobby": ["Sport", "Music", "Esports", "Anime"]},
+{"id": 002, "Name": "Alex Brown", "Flight_Time": "2019/10/01", "Flight": 100, "Hobby": ["Music", "Esports", "Technology"]},
+{"id": 003, "Name": "Ole Haze", "Flight_Time": "2019/10/01", "Flight": 100, "Hobby": ["Technology", "DIY", "Fashion"]},
+{"id": 004, "Name": "Eemmon Zark", "Flight_Time": "2019/10/02", "Flight": 120, "Hobby": ["DIY"]}
+{"id": 005, "Name": "Alan Gazi", "Flight_Time": "2019/10/01", "Flight": 180, "Hobby": ["Music", "Esports"]}
+]

@@ -1,0 +1,7 @@
+[
+{"id": 001, "Name": "Joe Green", "Gender": "male", "Nationality": "UK", "Age": 18, "Flight_Time": "2019/10/01", "Flight": 100, "Hobby": ["Sport", "Music", "Esports", "Anime"]},
+{"id": 002, "Name": "Alex Brown", "Gender": "female","Nationality": "Uk","Age": 20, "Flight_Time": "2019/10/01", "Flight": 100, "Hobby": ["Music", "Esports", "Technology"]},
+{"id": 003, "Name": "Ole Haze", "Gender": "male","Nationality": "CN","Age": 18, "Flight_Time": "2019/10/01", "Flight": 100, "Hobby": ["Technology", "DIY", "Fashion"]},
+{"id": 004, "Name": "Eemmon Zark", "Gender": "female","Nationality": "US","Age": 18, "Flight_Time": "2019/10/02", "Flight": 120, "Hobby": ["DIY"]}
+{"id": 005, "Name": "Alan Gazi", "Gender": "male","Nationality": "US","Age": 18, "Flight_Time": "2019/10/01", "Flight": 180, "Hobby": ["Music", "Esports"]}
+]
